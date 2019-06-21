@@ -15,8 +15,8 @@ function currentLine(line){
   else {
     let arr = [];
     for (let i = 0; i < line.length; i++){
-      arr.push(`${i+1}. line[i]`);
+      arr.push(`${i+1}. ${line[i]}`);
     }
-    return arr.join(', ');
+    return `The line is currently: ${arr.join(', ')}`;
   }
 }
